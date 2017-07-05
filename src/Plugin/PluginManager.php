@@ -8,16 +8,16 @@ namespace ZF\Doctrine\Repository\Plugin;
 
 use Zend\ServiceManager\AbstractPluginManager;
 use Zend\ServiceManager\Exception;
+use Interop\Container\ContainerInterface;
 
 class PluginManager extends AbstractPluginManager
 {
+    private $container;
+
     /**
      * @var string
      */
     protected $instanceOf = PluginInterface::class;
-
-    protected $allowOverride = true;
-    protected $autoAddInvokableClass = false;
 
     /**
      * Validate the plugin is of the expected type (v3).

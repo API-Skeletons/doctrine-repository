@@ -2,6 +2,8 @@
 
 namespace ZF\Doctrine\Repository;
 
+use Zend\ServiceManager\Factory\InvokableFactory;
+
 return [
     'doctrine' => [
         'configuration' => [
