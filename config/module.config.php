@@ -1,17 +1,23 @@
 <?php
 
+namespace ZF\Doctrine\Repository;
+
 return [
     'doctrine' => [
         'configuration' => [
             'orm_default' => [
-                'repository_factory' => 'ZF\Doctrine\Repository\RepositoryFactory',
-            ], 
+                'repository_factory' => RepositoryFactory::class,
+            ],
         ],
     ],
     'service_manager' => [
         'factories' => [
-            'ZF\Doctrine\Repository\RepositoryFactory' =>
-                'ZF\Doctrine\Repository\RepositoryFactoryFactory',
+            RepositoryFactory::class =>
+                RepositoryFactoryFactory::class,
+            Plugin\PluginManager::class
+                => Plugin\PluginManagerFactory::class,
         ],
+    ],
+    'zf-doctrine-repository-plugin' => [
     ],
 ];
