@@ -15,17 +15,11 @@ matrix:
   include:
     - php: 5.6
       env:
-        - DEPS=lowest
-    - php: 5.6
-      env:
         - DEPS=locked
         - TEST_COVERAGE=true
     - php: 5.6
       env:
         - DEPS=latest
-    - php: 7
-      env:
-        - DEPS=lowest
     - php: 7
       env:
         - DEPS=locked
@@ -35,16 +29,10 @@ matrix:
         - DEPS=latest
     - php: 7.1
       env:
-        - DEPS=lowest
-    - php: 7.1
-      env:
         - DEPS=locked
     - php: 7.1
       env:
         - DEPS=latest
-    - php: hhvm
-      env:
-        - DEPS=lowest
     - php: hhvm
       env:
         - DEPS=locked
