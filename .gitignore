@@ -1,4 +1,5 @@
 vendor/
-phpunit.xml
-clover.xml
-coveralls-upload.json
+composer.lock
+*.DS_Store
+test/clover.xml
+test/coverage

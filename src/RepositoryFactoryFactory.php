@@ -8,7 +8,7 @@ use Interop\Container\ContainerInterface;
 
 class RepositoryFactoryFactory implements FactoryInterface
 {
-    public function __invoke(ContainerInterface $container, $requestedName, array $options = NULL)
+    public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
         $instance = new RepositoryFactory();
         $instance->setPluginManager($container->get(Plugin\PluginManager::class));
