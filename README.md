@@ -37,6 +37,7 @@ directly or to access the audit data with a plugin:
 ```
 use Database\Entity\User;
 
+// Return an ArrayCollection of Audit entities for the User entity identified by $id
 $objectManager->getRepository(User::class)->plugin('audit')->trail($id);
 ```
 
@@ -44,6 +45,7 @@ $objectManager->getRepository(User::class)->plugin('audit')->trail($id);
 ```
 use Database\Entity\User;
 
+// Return a single User entity fetched by applying the User Query Provider 
 $objectManager->getRepository(User::class)->plugin('queryProvider')->find($id);
 ```
 
