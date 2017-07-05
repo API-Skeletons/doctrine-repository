@@ -10,7 +10,6 @@ cache:
 env:
   global:
     - COMPOSER_ARGS="--no-interaction --ignore-platform-reqs"
-    - ADAPTER_DEPS="alcaeus/mongo-php-adapter"
 
 matrix:
   include:
@@ -27,28 +26,22 @@ matrix:
     - php: 7
       env:
         - DEPS=lowest
-        - MONGO_DRIVER=mongodb
     - php: 7
       env:
         - DEPS=locked
         - CS_CHECK=true
-        - MONGO_DRIVER=mongodb
     - php: 7
       env:
         - DEPS=latest
-        - MONGO_DRIVER=mongodb
     - php: 7.1
       env:
         - DEPS=lowest
-        - MONGO_DRIVER=mongodb
     - php: 7.1
       env:
         - DEPS=locked
-        - MONGO_DRIVER=mongodb
     - php: 7.1
       env:
         - DEPS=latest
-        - MONGO_DRIVER=mongodb
     - php: hhvm
       env:
         - DEPS=lowest
@@ -66,7 +59,6 @@ before_install:
   - travis_retry composer self-update
 
 install:
-  - yes '' | pecl -q install -f $MONGO_DRIVER
   - if [[ $TEST_COVERAGE == 'true' ]]; then travis_retry composer require --dev $COMPOSER_ARGS $COVERAGE_DEPS ; fi
   - if [[ $DEPS == 'latest' ]]; then travis_retry composer update $COMPOSER_ARGS ; fi
   - if [[ $DEPS == 'lowest' ]]; then travis_retry composer update --prefer-lowest --prefer-stable $COMPOSER_ARGS ; fi
