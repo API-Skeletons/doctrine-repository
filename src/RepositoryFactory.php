@@ -24,7 +24,7 @@ final class RepositoryFactory implements
     private $repositoryList = array();
     private $pluginManager;
 
-    public function setPluginManager(PluginManager $pluginManager)
+    public function setPluginManager(Plugin\PluginManager $pluginManager)
     {
         $this->pluginManager = $pluginManager;
 

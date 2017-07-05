@@ -2,7 +2,7 @@
 
 namespace ZF\Doctrine\Repository;
 
-interface RepositoryInterface
+interface ObjectRepositoryInterface
 {
     public function setPluginManager(PluginManager $pluginManager);
     public function plugin($name);

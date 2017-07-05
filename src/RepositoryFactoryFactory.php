@@ -10,7 +10,7 @@ class RepositoryFactoryFactory implements FactoryInterface
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
         $instance = new RepositoryFactory();
-        $instance->setPluginManager($serviceLocator->get(PluginManager::class));
+        $instance->setPluginManager($serviceLocator->get(Plugin\PluginManager::class));
 
         return $instance;
     }

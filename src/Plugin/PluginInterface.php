@@ -2,7 +2,9 @@
 
 namespace ZF\Doctrine\Repository\Plugin;
 
+use ZF\Doctrine\Repository\ObjectRepositoryInterface;
+
 interface PluginInterface
 {
-    public function __invoke();
+    public function __construct(array $creationOptions);
 }

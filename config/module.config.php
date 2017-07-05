@@ -7,6 +7,7 @@ return [
         'configuration' => [
             'orm_default' => [
                 'repository_factory' => RepositoryFactory::class,
+                'default_repository_class_name' => ObjectRepository::class,
             ],
         ],
     ],
