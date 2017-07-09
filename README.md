@@ -16,7 +16,7 @@ $this->plugin('encryption')->encrypt($value);
 Why use this repository structure?
 ----------------------------------
 
-The default repository for Doctrine ORM gives little access to resources
+The default repository for Doctrine ORM gives no access to resources
 outside Doctrine.  And the Doctrine ORM Object Manager does not give
 access to a dependency injection container.  So when your applications
 require more from their repositories the only option is to write your
@@ -44,6 +44,31 @@ Once installed, add `ZF\Doctrine\Repository` to your list of modules inside
 > that plugin will install zf-doctrine-repository as a module for you.
 
 
+Configuration
+-------------
+
+No manual configuration is required to use this module.
+
+This module makes these changes to your
+`doctrine.entitymanager.orm_default` configuration:
+
+```
+namespace ZF\Doctrine\Repository;
+...
+    'doctrine' => [
+        'configuration' => [
+            'orm_default' => [
+                'repository_factory' => RepositoryFactory::class,
+                'default_repository_class_name' => ObjectRepository::class,
+            ],
+        ],
+    ],
+```
+
+If your application already has a default repository class you can edit it to implement
+`ZF\Doctrine\Repository\ObjectRepositoryInterface` and the RepositoryFactory can use it.
+
+
 Creating a Plugin
 -----------------
 
@@ -59,8 +84,8 @@ and [testing boolean plugin configuration](https://github.com/API-Skeletons/zf-d
 as a template.
 
 
-Plugin Examples
----------------
+Future Plugins
+--------------
 
 This repository is forward-looking and architected to support the needs
 today and into the future.  Here are examples of repository plugins
