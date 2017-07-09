@@ -3,7 +3,8 @@
     "description": "Plugin Architecture for Doctrine Repositories",
     "type": "library",
     "require": {
-        "doctrine/doctrine-orm-module": "*"
+        "doctrine/doctrine-orm-module": "*",
+        "zendframework/zend-servicemanager": "^3.0"
     },
     "require-dev": {
         "zendframework/zend-test": "^3.1",

@@ -25,8 +25,8 @@ return [
         'aliases' => [
             'boolean' => Plugin\BooleanPlugin::class,
         ],
-        'invokables' => [
-            Plugin\BooleanPlugin::class => Plugin\BooleanPlugin::class,
+        'factories' => [
+            Plugin\BooleanPlugin::class => InvokableFactory::class,
         ]
     ],
 ];
