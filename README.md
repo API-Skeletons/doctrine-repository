@@ -1,6 +1,9 @@
 zf-doctrine-repository
 ======================
 
+[![Build Status](https://travis-ci.org/api-skeletons/zf-doctrine-repository.svg?branch=master)](https://travis-ci.org/api-skeletons/zf-doctrine-repository)
+[![Total Downloads](https://poser.pugx.org/api-skeletons/zf-doctrine-repository/downloads)](https://packagist.org/packages/api-skeletons/zf-doctrine-repository)
+
 This is a replacement for the default repository structure of
 Doctrine ORM.  This replacement implements a plugin architecture
 for extensisons to repositories.
@@ -84,8 +87,24 @@ and [testing boolean plugin configuration](https://github.com/API-Skeletons/zf-d
 as a template.
 
 
-Future Plugins
---------------
+Available Plugins
+-----------------
+
+**zf-doctrine-repository-query-provider** - [zfcampus/zf-apigility-doctrine](https://github.com/zfcampus/zf-apigiltiy-doctrine)
+includes Query Providers which may take the current authenticated user and add complex filters to a a QueryBuilder object in
+order to filter whether the user has access to a given entity.  This filtering mechanism can be used across a whole
+application whenever authorized access is needed to an entity.
+
+```
+use Database\Entity\User;
+
+// Return a single User entity fetched by applying the User Query Provider to a given `$id`
+$objectManager->getRepository(User::class)->plugin('queryProvider')->find($id);
+```
+
+
+Future Plugin Plans
+-------------------
 
 This repository is forward-looking and architected to support the needs
 today and into the future.  Here are examples of repository plugins
@@ -106,13 +125,3 @@ $objectManager->getRepository(User::class)->plugin('audit')->getUpdatedAt(User $
 // Return the complete audit trail for an entity
 $objectManager->getRepository(User::class)->plugin('audit')->getAuditTrail(User $userEntity);
 ```
-
-
-**zf-doctrine-repository-query-provider** - [zfcampus/zf-apigility-doctrine](https://github.com/zfcampus/zf-apigiltiy-doctrine) includes Query Providers which may take the current authenticated user and add complex filters to a a QueryBuilder object in order to filter whether the user has access to a given entity.  This filtering mechanism can be used across a whole application whenever authorized access is needed to an entity.
-```
-use Database\Entity\User;
-
-// Return a single User entity fetched by applying the User Query Provider to a given `$id`
-$objectManager->getRepository(User::class)->plugin('queryProvider')->find($id);
-```
-
