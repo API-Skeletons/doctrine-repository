@@ -1,7 +1,7 @@
 zf-doctrine-repository
 ======================
 
-[![Build Status](https://travis-ci.org/api-skeletons/zf-doctrine-repository.svg?branch=master)](https://travis-ci.org/api-skeletons/zf-doctrine-repository)
+[![Build Status](https://travis-ci.org/API-Skeletons/zf-doctrine-repository.svg?branch=master)](https://travis-ci.org/API-Skeletons/zf-doctrine-repository)
 [![Total Downloads](https://poser.pugx.org/api-skeletons/zf-doctrine-repository/downloads)](https://packagist.org/packages/api-skeletons/zf-doctrine-repository)
 
 This is a replacement for the default repository structure of
