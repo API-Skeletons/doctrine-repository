@@ -90,7 +90,7 @@ as a template.
 Available Plugins
 -----------------
 
-**zf-doctrine-repository-query-provider** - [zfcampus/zf-apigility-doctrine](https://github.com/zfcampus/zf-apigiltiy-doctrine)
+**[zf-doctrine-repository-query-provider](https://github.com/api-skeletons/zf-doctrine-repository-query-provider)** - [zfcampus/zf-apigility-doctrine](https://github.com/zfcampus/zf-apigiltiy-doctrine)
 includes Query Providers which may take the current authenticated user and add complex filters to a a QueryBuilder object in
 order to filter whether the user has access to a given entity.  This filtering mechanism can be used across a whole
 application whenever authorized access is needed to an entity.
