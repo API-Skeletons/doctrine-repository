@@ -4,6 +4,7 @@ namespace ZF\Doctrine\Repository;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Repository\RepositoryFactory as ORMRepositoryFactory;
+use GianArb\Angry\ClassDefence;
 
 /**
  * This factory is used to create repository objects for entities at runtime.
@@ -16,6 +17,8 @@ use Doctrine\ORM\Repository\RepositoryFactory as ORMRepositoryFactory;
 final class RepositoryFactory implements
     ORMRepositoryFactory
 {
+    use ClassDefence;
+
     /**
      * The list of EntityRepository instances.
      *

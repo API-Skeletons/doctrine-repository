@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "doctrine/doctrine-orm-module": "*",
-        "zendframework/zend-servicemanager": "^3.0"
+        "zendframework/zend-servicemanager": "^3.0",
+        "GianArb/Angry": "^0.1.1"
     },
     "require-dev": {
         "zendframework/zend-test": "^3.1",

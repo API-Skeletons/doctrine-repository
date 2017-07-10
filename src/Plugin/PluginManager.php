@@ -9,9 +9,14 @@ namespace ZF\Doctrine\Repository\Plugin;
 use Zend\ServiceManager\AbstractPluginManager;
 use Zend\ServiceManager\Exception;
 use Interop\Container\ContainerInterface;
+use GianArb\Angry\Unclonable;
+use GianArb\Angry\Unserializable;
 
 class PluginManager extends AbstractPluginManager
 {
+    use Unclonable;
+    use Unserializable;
+
     private $container;
 
     /**
