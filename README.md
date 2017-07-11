@@ -9,7 +9,7 @@ Doctrine ORM.  This replacement implements a plugin architecture
 for extensisons to repositories.
 
 For instance, if you need access to an encryption/decryption resource
-inside your entity you could implement it as a plugin accessible as
+inside your repository you could implement it as a plugin accessible as
 
 ```php
 $this->plugin('encryption')->encrypt($value);

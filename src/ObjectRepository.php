@@ -28,4 +28,11 @@ class ObjectRepository extends EntityRepository implements
     {
         return $this->pluginManager->get($name, ['repository' => $this, 'parameters' => $parameters]);
     }
+
+    // The getEntityManager function of the EntityRepository is protected
+    // so this accessor function is necessary.
+    public function getObjectManager()
+    {
+        return $this->getEntityManager();
+    }
 }
