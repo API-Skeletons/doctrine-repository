@@ -19,7 +19,7 @@ abstract class AbstractTest extends \Zend\Test\PHPUnit\Controller\AbstractHttpCo
         $config = $this->getApplication()->getConfig();
         $doctrineAdapter = $serviceManager->get('doctrine.entitymanager.orm_default');
 
-        return array(array($doctrineAdapter));
+        return [[$doctrineAdapter]];
     }
 
     protected function tearDown()

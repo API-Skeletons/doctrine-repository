@@ -53,7 +53,7 @@ class User2 implements ArraySerializableInterface
 
     public function getArrayCopy()
     {
-        return array(
+        return [
             'id' => $this->getId(),
             'username' => $this->getUsername(),
             'password' => $this->getPassword(),
@@ -62,7 +62,7 @@ class User2 implements ArraySerializableInterface
             'country' => $this->getCountry(),
             'phone_number' => $this->getPhoneNumber(), // underscore formatting for openid
             'phoneNumber' => $this->getPhoneNumber(),
-        );
+        ];
     }
 
     public function getId()
