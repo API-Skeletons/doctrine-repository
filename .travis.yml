@@ -15,11 +15,8 @@ matrix:
   include:
     - php: 7.1
       env:
-        - DEPS=lowest
         - TEST_COVERAGE=true
-    - php: 7.1
-      env:
-        - DEPS=latest
+        - CS_CHECK=true
 
 before_install:
   - if [[ $TEST_COVERAGE != 'true' ]]; then phpenv config-rm xdebug.ini || return 0 ; fi
@@ -28,7 +25,6 @@ before_install:
 install:
   - if [[ $TEST_COVERAGE == 'true' ]]; then travis_retry composer require --dev $COMPOSER_ARGS $COVERAGE_DEPS ; fi
   - if [[ $DEPS == 'latest' ]]; then travis_retry composer update $COMPOSER_ARGS ; fi
-  - if [[ $DEPS == 'lowest' ]]; then travis_retry composer update --prefer-lowest --prefer-stable $COMPOSER_ARGS ; fi
   - travis_retry composer install $COMPOSER_ARGS
   - composer show
 
