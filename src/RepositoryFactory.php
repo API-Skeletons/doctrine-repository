@@ -24,7 +24,7 @@ final class RepositoryFactory implements
      *
      * @var \Doctrine\Common\Persistence\ObjectRepository[]
      */
-    private $repositoryList = array();
+    private $repositoryList = [];
     private $pluginManager;
 
     public function setPluginManager(Plugin\PluginManager $pluginManager)
