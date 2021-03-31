@@ -1,12 +1,12 @@
 <?php
 
-namespace ZF\Doctrine\Repository;
+namespace ApiSkeletons\Doctrine\Repository;
 
-use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
 use GianArb\Angry\Unclonable;
 use GianArb\Angry\Unserializable;
+use Interop\Container\ContainerInterface;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class RepositoryFactoryFactory implements
     FactoryInterface

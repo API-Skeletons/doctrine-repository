@@ -1,11 +1,11 @@
 <?php
 
-namespace ZF\Doctrine\Repository;
+namespace ApiSkeletons\Doctrine\Repository;
 
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
-use Zend\ModuleManager\Feature\InitProviderInterface;
-use Zend\ModuleManager\Feature\DependencyIndicatorInterface;
-use Zend\ModuleManager\ModuleManagerInterface;
+use Laminas\ModuleManager\Feature\ConfigProviderInterface;
+use Laminas\ModuleManager\Feature\InitProviderInterface;
+use Laminas\ModuleManager\Feature\DependencyIndicatorInterface;
+use Laminas\ModuleManager\ModuleManagerInterface;
 use GianArb\Angry\Unclonable;
 use GianArb\Angry\Unserializable;
 

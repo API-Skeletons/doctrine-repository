@@ -1,13 +1,9 @@
 <?php
-/**
- * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2016 Zend Technologies USA Inc. (http://www.zend.com)
- */
 
-namespace ZF\Doctrine\Repository\Plugin;
+namespace ApiSkeletons\Doctrine\Repository\Plugin;
 
-use Zend\ServiceManager\AbstractPluginManager;
-use Zend\ServiceManager\Exception;
+use Laminas\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\Exception;
 use Interop\Container\ContainerInterface;
 use GianArb\Angry\Unclonable;
 use GianArb\Angry\Unserializable;

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZFTest\Doctrine\Repository;
+namespace ApiSkeletonsTest\Doctrine\Repository;
 
-use ZFTest\Doctrine\Repository\Entity\User;
-use ZFTest\Doctrine\Repository\Entity\User2;
+use ApiSkeletonsTest\Doctrine\Repository\Entity\User;
+use ApiSkeletonsTest\Doctrine\Repository\Entity\User2;
 
 class PluginTest extends AbstractTest
 {
@@ -15,7 +15,7 @@ class PluginTest extends AbstractTest
         $repository = $storage->getRepository(User::class);
         $repository2 = $storage->getRepository(User2::class);
 
-        $this->assertInstanceOf('ZF\Doctrine\Repository\ObjectRepository', $repository);
+        $this->assertInstanceOf('ApiSkeletons\Doctrine\Repository\ObjectRepository', $repository);
         $this->assertTrue($repository->plugin('boolean')->getBoolean(true));
         $this->assertFalse($repository->plugin('boolean')->getBoolean(false));
 

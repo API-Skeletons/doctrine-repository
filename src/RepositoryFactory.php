@@ -1,6 +1,6 @@
 <?php
 
-namespace ZF\Doctrine\Repository;
+namespace ApiSkeletons\Doctrine\Repository;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Repository\RepositoryFactory as ORMRepositoryFactory;

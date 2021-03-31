@@ -1,6 +1,6 @@
 <?php
 
-namespace ZFTest\Doctrine\Repository;
+namespace ApiSkeletonsTest\Doctrine\Repository;
 
 class Module
 {
@@ -11,10 +11,12 @@ class Module
      */
     public function getAutoloaderConfig()
     {
-        return ['Zend\Loader\StandardAutoloader' => ['namespaces' => [
-            __NAMESPACE__ => __DIR__ . '/src/',
-        ]
-        ]
+        return [
+            'Laminas\Loader\StandardAutoloader' => [
+                'namespaces' => [
+                    __NAMESPACE__ => __DIR__ . '/src/',
+                ]
+            ]
         ];
     }
 

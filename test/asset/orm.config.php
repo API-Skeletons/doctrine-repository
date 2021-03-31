@@ -3,8 +3,8 @@
 $modules = [
     'DoctrineModule',
     'DoctrineORMModule',
-    'ZFTest\Doctrine\Repository',
-    'ZF\Doctrine\Repository',
+    'ApiSkeletonsTest\Doctrine\Repository',
+    'ApiSkeletons\Doctrine\Repository',
 ];
 
 if (class_exists(Zend\Router\Module::class)) {
@@ -25,7 +25,7 @@ return [
             __DIR__ . '/../../../../..',
             __DIR__ . '/../../../../../vendor',
             __DIR__ . '/module',
-            'ZFTest\\Doctrine\\Repository' => __DIR__ . '/module/Doctrine',
+            'ApiSkeletonsTest\\Doctrine\\Repository' => __DIR__ . '/module/Doctrine',
         ],
 
         // An array of paths from which to glob configuration files after

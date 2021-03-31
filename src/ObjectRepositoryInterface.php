@@ -1,6 +1,6 @@
 <?php
 
-namespace ZF\Doctrine\Repository;
+namespace ApiSkeletons\Doctrine\Repository;
 
 interface ObjectRepositoryInterface
 {

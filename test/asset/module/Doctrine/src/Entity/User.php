@@ -1,8 +1,8 @@
 <?php
 
-namespace ZFTest\Doctrine\Repository\Entity;
+namespace ApiSkeletonsTest\Doctrine\Repository\Entity;
 
-use Zend\Stdlib\ArraySerializableInterface;
+use Laminas\Stdlib\ArraySerializableInterface;
 
 class User implements ArraySerializableInterface
 {

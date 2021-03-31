@@ -1,17 +1,17 @@
 {
-    "name": "api-skeletons/zf-doctrine-repository",
+    "name": "api-skeletons/doctrine-repository",
     "description": "Plugin Architecture for Doctrine Repositories",
     "type": "library",
     "require": {
         "php": "^7.1",
-        "doctrine/doctrine-orm-module": "^1.2 || ^2.1",
-        "zendframework/zend-servicemanager": "^3.0",
-        "GianArb/Angry": "^0.1.1"
+        "doctrine/doctrine-orm-module": "^3.0 || ^4.0",
+        "laminas/laminas-servicemanager": "^3.6",
+        "gianarb/angry": "^1.0",
+        "phpunit/phpunit": "^9.5"
     },
     "require-dev": {
-        "zendframework/zend-test": "^2.6 || ^3.1",
-        "phpunit/phpunit": "^5.7",
-        "squizlabs/php_codesniffer": "^3.0",
+        "laminas/laminas-test": "^3.4",
+        "squizlabs/php_codesniffer": "^3.5",
         "api-skeletons/coding-standard": "^1.0"
     },
     "license": "MIT",
@@ -23,18 +23,18 @@
     ],
     "autoload": {
         "psr-4": {
-            "ZF\\Doctrine\\Repository\\": "src/"
+            "ApiSkeletons\\Doctrine\\Repository\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ZFTest\\Doctrine\\Repository\\": "test/"
+            "ApiSkeletonsTest\\Doctrine\\Repository\\": "test/"
         }
     },
     "extra": {
         "zf": {
             "module": [
-                "ZF\\Doctrine\\Repository"
+                "ApiSkeletons\\Doctrine\\Repository"
             ]
         }
     },

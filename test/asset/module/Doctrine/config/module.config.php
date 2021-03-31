@@ -1,6 +1,6 @@
 <?php
 
-namespace ZFTest\Doctrine\Repository;
+namespace ApiSkeletonsTest\Doctrine\Repository;
 
 use Zend\ServiceManager\Factory\InvokableFactory;
 
@@ -16,7 +16,7 @@ return [
             'orm_default' => [
                 'class' => 'Doctrine\\ORM\\Mapping\\Driver\\DriverChain',
                 'drivers' => [
-                    'ZFTest\\Doctrine\\Repository\\Entity' => 'orm_driver',
+                    'ApiSkeletonsTest\\Doctrine\\Repository\\Entity' => 'orm_driver',
                 ],
             ],
         ],

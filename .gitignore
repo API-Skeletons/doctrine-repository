@@ -3,3 +3,4 @@ composer.lock
 *.DS_Store
 test/clover.xml
 test/coverage
+.phpunit.result.cache

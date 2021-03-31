@@ -1,8 +1,8 @@
 <?php
 
-namespace ZFTest\Doctrine\Repository\Plugin;
+namespace ApiSkeletonsTest\Doctrine\Repository\Plugin;
 
-use ZF\Doctrine\Repository\Plugin\PluginInterface;
+use ApiSkeletons\Doctrine\Repository\Plugin\PluginInterface;
 
 class BooleanPlugin implements PluginInterface
 {

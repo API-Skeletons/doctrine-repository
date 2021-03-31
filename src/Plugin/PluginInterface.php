@@ -1,15 +1,15 @@
 <?php
 
-namespace ZF\Doctrine\Repository\Plugin;
+namespace ApiSkeletons\Doctrine\Repository\Plugin;
 
-use ZF\Doctrine\Repository\ObjectRepositoryInterface;
+use ApiSkeletons\Doctrine\Repository\ObjectRepositoryInterface;
 
 interface PluginInterface
 {
     /**
      * $creationsOptions will have two keys
      *
-     *   ZF\Doctrine\Repository\ObjectRepository 'repository'
+     *   ApiSkeletons\Doctrine\Repository\ObjectRepository 'repository'
      *   array $parameters
      *
      * These are defined in ZF\Doctrine\Repository\ObjectRepository::plugin

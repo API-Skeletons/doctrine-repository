@@ -1,11 +1,11 @@
 <?php
 
-namespace ZFTest\Doctrine\Repository;
+namespace ApiSkeletonsTest\Doctrine\Repository;
 
 use Doctrine\ORM\Tools\SchemaTool;
-use ZF\OAuth2\Doctrine\Entity;
-use ZFTest\Doctrine\Repository\Entity\User;
-use ZFTest\Doctrine\Repository\Entity\User2;
+use ApiSkeletons\OAuth2\Doctrine\Entity;
+use ApiSkeletonsTest\Doctrine\Repository\Entity\User;
+use ApiSkeletonsTest\Doctrine\Repository\Entity\User2;
 use Datetime;
 use Exception;
 
@@ -22,11 +22,11 @@ abstract class AbstractTest extends \Zend\Test\PHPUnit\Controller\AbstractHttpCo
         return [[$doctrineAdapter]];
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->setApplicationConfig(
             include __DIR__ . '/../asset/orm.config.php'
@@ -46,7 +46,7 @@ abstract class AbstractTest extends \Zend\Test\PHPUnit\Controller\AbstractHttpCo
         $user->setProfile('profile');
         $user->setCountry('US');
         $user->setPhoneNumber('phone');
-        $user->setEmail('doctrine@zfcampus');
+        $user->setEmail('doctrine@apiskeletons');
 
         $user2 = new User();
 
@@ -58,7 +58,7 @@ abstract class AbstractTest extends \Zend\Test\PHPUnit\Controller\AbstractHttpCo
         $user->setProfile('profile');
         $user->setCountry('US');
         $user->setPhoneNumber('phone');
-        $user->setEmail('doctrine@zfcampus');
+        $user->setEmail('doctrine@apiskeletons');
 
         $user2 = new User2();
 
