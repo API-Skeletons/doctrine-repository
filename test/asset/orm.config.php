@@ -7,8 +7,8 @@ $modules = [
     'ApiSkeletons\Doctrine\Repository',
 ];
 
-if (class_exists(Zend\Router\Module::class)) {
-    $modules[] = 'Zend\\Router';
+if (class_exists(Laminas\Router\Module::class)) {
+    $modules[] = 'Laminas\\Router';
 }
 
 return [

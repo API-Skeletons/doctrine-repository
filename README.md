@@ -76,7 +76,7 @@ If your application already has a default repository class you can edit it to im
 Creating a Plugin
 -----------------
 
-The config key for the repository plugin service locator is `doctrine-repository-plugin`.
+The config key for the repository plugin service locator is `api-skeletons-doctrine-repository-plugin`.
 Your plugin must implement `ZF\Doctrine\Repository\Plugin\PluginInterface`
 
 The `__construct` of your Plugin will take an array including the repository and any other parameters.

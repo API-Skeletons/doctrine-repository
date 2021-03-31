@@ -21,7 +21,7 @@ return [
             ],
         ],
     ],
-    'zf-doctrine-repository-plugin' => [
+    'api-skeletons-doctrine-repository-plugin' => [
         'aliases' => [
             'boolean' => Plugin\BooleanPlugin::class,
         ],

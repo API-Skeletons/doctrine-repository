@@ -29,7 +29,7 @@ class Module implements
 
         $serviceListener->addServiceManager(
             Plugin\PluginManager::class,
-            'zf-doctrine-repository-plugin',
+            'api-skeletons-doctrine-repository-plugin',
             Plugin\PluginInterface::class,
             'getZFDoctrineRepositoryPluginManagerConfig'
         );

@@ -19,6 +19,6 @@ return [
                 => Plugin\PluginManagerFactory::class,
         ],
     ],
-    'zf-doctrine-repository-plugin' => [
+    'api-skeletons-doctrine-repository-plugin' => [
     ],
 ];
