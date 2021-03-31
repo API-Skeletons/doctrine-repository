@@ -3,7 +3,7 @@
     "description": "Plugin Architecture for Doctrine Repositories",
     "type": "library",
     "require": {
-        "php": "^7.1",
+        "php": "^7.3",
         "doctrine/doctrine-orm-module": "^3.0 || ^4.0",
         "laminas/laminas-servicemanager": "^3.6",
         "gianarb/angry": "^1.0",
